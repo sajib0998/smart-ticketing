@@ -6,6 +6,7 @@ function handleSit(){
     const text = a1.innerText;
     const mainText = text;
 
+
     // dubbole click
     let a = 1;
     a1.addEventListener('click',()=>{
@@ -19,9 +20,10 @@ function handleSit(){
     // create element
     const divName = document.getElementById('div-name')
      const p = document.createElement('p')
-     p.classList.add('mr-10')
+     
+
      divName.appendChild(p)
-     p.innerText = mainText + 'Economoy' + 550;
+     p.innerText = mainText + " " + 'Economy' + ' ' + 550;
 
     // remove
 
@@ -70,7 +72,7 @@ function handleSitA2(){
      const p = document.createElement('p')
      p.classList.add('mr-10')
      divName.appendChild(p)
-     p.innerText = mainText + 'Economoy' + 550;
+     p.innerText = mainText + " " + 'Economy' + ' ' + 550;
     //  part
      // remove
 
@@ -130,7 +132,7 @@ function handleSitA3(){
      const p = document.createElement('p')
      p.classList.add('mr-10')
      divName.appendChild(p)
-     p.innerText = mainText + 'Economoy' + 550;
+     p.innerText = mainText + " " + 'Economy' + ' ' + 550;
     //  part
      // remove
 
@@ -190,7 +192,7 @@ function handleSitA4(){
      const p = document.createElement('p')
      p.classList.add('mr-10')
      divName.appendChild(p)
-     p.innerText = mainText + 'Economoy' + 550;
+     p.innerText = mainText + " " + 'Economy' + ' ' + 550;
     //  part
      // remove
 
@@ -249,7 +251,7 @@ function handleSitB1(){
      const p = document.createElement('p')
      p.classList.add('mr-10')
      divName.appendChild(p)
-     p.innerText = mainText + 'Economoy' + 550;
+     p.innerText = mainText + " " + 'Economy' + ' ' + 550;
     //  part
      // remove
 
@@ -308,7 +310,7 @@ function handleSitB2(){
      const p = document.createElement('p')
      p.classList.add('mr-10')
      divName.appendChild(p)
-     p.innerText = mainText + 'Economoy' + 550;
+     p.innerText = mainText + " " + 'Economy' + ' ' + 550;
     //  part
      // remove
 
@@ -367,7 +369,7 @@ function handleSitB3(){
      const p = document.createElement('p')
      p.classList.add('mr-10')
      divName.appendChild(p)
-     p.innerText = mainText + 'Economoy' + 550;
+     p.innerText = mainText + " " + 'Economy' + ' ' + 550;
     //  part
      // remove
 
@@ -426,7 +428,7 @@ function handleSitB4(){
      const p = document.createElement('p')
      p.classList.add('mr-10')
      divName.appendChild(p)
-     p.innerText = mainText + 'Economoy' + 550;
+     p.innerText = mainText + " " + 'Economy' + ' ' + 550;
     //  part
      // remove
 
@@ -492,7 +494,10 @@ function applyBtn(){
 // buy tickets
 
 function buyTickets(){
-    const targetSection = document.getElementById('seat-list-section');
+    const targetSection = document.getElementById('green-line');
     targetSection.scrollIntoView({behavior:"smooth"});
 }
 
+function ContinueBtn(){
+    location.reload();
+}
