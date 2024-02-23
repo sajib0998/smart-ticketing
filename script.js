@@ -1,503 +1,131 @@
-let sum =0;
-function handleSit(){
-    const a1 = document.getElementById('A1');
-    a1.classList.add('bg-[#1DD100]');
-    a1.classList.add('text-white')
-    const text = a1.innerText;
-    const mainText = text;
+// let sum =0;
+// function handleSit(){
+//     const a1 = document.getElementById('A1');
+//     a1.classList.add('bg-[#1DD100]');
+//     a1.classList.add('text-white')
+//     const text = a1.innerText;
+//     const mainText = text;
 
 
-    // dubbole click
-    let a = 1;
-    a1.addEventListener('click',()=>{
-        a++;
-        if(a === 2){
-            alert("You cannot click a button twice")
-            location.reload();
-        }
-    })
+//     // dubbole click
+//     let a = 1;
+//     a1.addEventListener('click',()=>{
+//         a++;
+//         if(a === 2){
+//             alert("You cannot click a button twice")
+//             location.reload();
+//         }
+//     })
 
-    // create element
-    const divName = document.getElementById('div-name')
-     const p = document.createElement('p')
-     
+//    
 
-     divName.appendChild(p)
-     p.innerText = mainText + " " + 'Economy' + ' ' + 550;
-
-    // remove
-
-    let totalSit = document.getElementById('total-sit');
-    let total = totalSit.innerText;
-    let mainTotal = parseInt(total);
-    let he = mainTotal - 1;
-    totalSit.innerText = he;
-
-    // add
-    let add = document.getElementById('add-number');
-    let addText = add.innerText;
-    let addNumber = parseInt(addText);
-    let added = addNumber + 1;
-    add.innerText = added;
-    if(add.innerText === '5'){
-        alert('you can purchases only 4 ticket')
-        location.reload();
-    }
-
-    // added price
-    let pr = 550;
-    let price = document.getElementById('total-price');
-    let priceValue = price.innerText;
-    sum = parseFloat(price.innerText) + pr;
-    price.innerText = sum;
-
-    // grand total
-    const grandTotal = document.getElementById('Grand-total');
-    const grandValue = grandTotal.innerText;
-    grandTotal.innerText = sum;
-     
-}
-
-
-                                // a2
-function handleSitA2(){
-    const a1 = document.getElementById('A2');
-    a1.classList.add('bg-[#1DD100]');
-    a1.classList.add('text-white')
-    const text = a1.innerText;
-    const mainText = text;
-
-    // create element
-    const divName = document.getElementById('div-name')
-     const p = document.createElement('p')
-     p.classList.add('mr-10')
-     divName.appendChild(p)
-     p.innerText = mainText + " " + 'Economy' + ' ' + 550;
-    //  part
-     // remove
-
-     let totalSit = document.getElementById('total-sit');
-     let total = totalSit.innerText;
-     let mainTotal = parseInt(total);
-     let he = mainTotal - 1;
-     totalSit.innerText = he;
- 
-     // add
-     let add = document.getElementById('add-number');
-     let addText = add.innerText;
-     let addNumber = parseInt(addText);
-     let added = addNumber + 1;
-     add.innerText = added;
-     if(add.innerText === '5'){
-         alert('you can purchases only 4 ticket')
-         location.reload();
-     }
-
-         // dubbole click
-    let a = 1;
-    a1.addEventListener('click',()=>{
-        a++;
-        if(a === 2){
-            alert("You cannot click a button twice")
-            location.reload();
-        }
-    })
- 
-     // added price
-     let pr = 550;
-     let price = document.getElementById('total-price');
-     let priceValue = price.innerText;
-     sum = parseFloat(price.innerText) + pr;
-     price.innerText = sum;
- 
-     // grand total
-     const grandTotal = document.getElementById('Grand-total');
-     const grandValue = grandTotal.innerText;
-     grandTotal.innerText = sum;
-      
-     
-}
-
-// a3
-
-function handleSitA3(){
-    const a1 = document.getElementById('A3');
-    a1.classList.add('bg-[#1DD100]');
-    a1.classList.add('text-white')
-    const text = a1.innerText;
-    const mainText = text;
-
-    // create element
-    const divName = document.getElementById('div-name')
-     const p = document.createElement('p')
-     p.classList.add('mr-10')
-     divName.appendChild(p)
-     p.innerText = mainText + " " + 'Economy' + ' ' + 550;
-    //  part
-     // remove
-
-     let totalSit = document.getElementById('total-sit');
-     let total = totalSit.innerText;
-     let mainTotal = parseInt(total);
-     let he = mainTotal - 1;
-     totalSit.innerText = he;
- 
-     // add
-     let add = document.getElementById('add-number');
-     let addText = add.innerText;
-     let addNumber = parseInt(addText);
-     let added = addNumber + 1;
-     add.innerText = added;
-     if(add.innerText === '5'){
-         alert('you can purchases only 4 ticket')
-         location.reload();
-     }
-
-         // dubbole click
-    let a = 1;
-    a1.addEventListener('click',()=>{
-        a++;
-        if(a === 2){
-            alert("You cannot click a button twice")
-            location.reload();
-        }
-    })
- 
-     // added price
-     let pr = 550;
-     let price = document.getElementById('total-price');
-     let priceValue = price.innerText;
-     sum = parseFloat(price.innerText) + pr;
-     price.innerText = sum;
- 
-     // grand total
-     const grandTotal = document.getElementById('Grand-total');
-     const grandValue = grandTotal.innerText;
-     grandTotal.innerText = sum;
-      
-     
-}
-
-// a4
-
-function handleSitA4(){
-    const a1 = document.getElementById('A4');
-    a1.classList.add('bg-[#1DD100]');
-    a1.classList.add('text-white')
-    const text = a1.innerText;
-    const mainText = text;
-
-    // create element
-    const divName = document.getElementById('div-name')
-     const p = document.createElement('p')
-     p.classList.add('mr-10')
-     divName.appendChild(p)
-     p.innerText = mainText + " " + 'Economy' + ' ' + 550;
-    //  part
-     // remove
-
-     let totalSit = document.getElementById('total-sit');
-     let total = totalSit.innerText;
-     let mainTotal = parseInt(total);
-     let he = mainTotal - 1;
-     totalSit.innerText = he;
- 
-     // add
-     let add = document.getElementById('add-number');
-     let addText = add.innerText;
-     let addNumber = parseInt(addText);
-     let added = addNumber + 1;
-     add.innerText = added;
-     if(add.innerText === '5'){
-         alert('you can purchases only 4 ticket')
-         location.reload();
-     }
-
-         // dubbole click
-    let a = 1;
-    a1.addEventListener('click',()=>{
-        a++;
-        if(a === 2){
-            alert("You cannot click a button twice")
-            location.reload();
-        }
-    })
- 
-     // added price
-     let pr = 550;
-     let price = document.getElementById('total-price');
-     let priceValue = price.innerText;
-     sum = parseFloat(price.innerText) + pr;
-     price.innerText = sum;
- 
-     // grand total
-     const grandTotal = document.getElementById('Grand-total');
-     const grandValue = grandTotal.innerText;
-     grandTotal.innerText = sum;
-      
-     
-}
-
-// b1
-function handleSitB1(){
-    const a1 = document.getElementById('B1');
-    a1.classList.add('bg-[#1DD100]');
-    a1.classList.add('text-white')
-    const text = a1.innerText;
-    const mainText = text;
-
-    // create element
-    const divName = document.getElementById('div-name')
-     const p = document.createElement('p')
-     p.classList.add('mr-10')
-     divName.appendChild(p)
-     p.innerText = mainText + " " + 'Economy' + ' ' + 550;
-    //  part
-     // remove
-
-     let totalSit = document.getElementById('total-sit');
-     let total = totalSit.innerText;
-     let mainTotal = parseInt(total);
-     let he = mainTotal - 1;
-     totalSit.innerText = he;
- 
-     // add
-     let add = document.getElementById('add-number');
-     let addText = add.innerText;
-     let addNumber = parseInt(addText);
-     let added = addNumber + 1;
-     add.innerText = added;
-     if(add.innerText === '5'){
-         alert('you can purchases only 4 ticket')
-         location.reload();
-     }
-
-         // dubbole click
-    let a = 1;
-    a1.addEventListener('click',()=>{
-        a++;
-        if(a === 2){
-            alert("You cannot click a button twice")
-            location.reload();
-        }
-    })
- 
-     // added price
-     let pr = 550;
-     let price = document.getElementById('total-price');
-     let priceValue = price.innerText;
-     sum = parseFloat(price.innerText) + pr;
-     price.innerText = sum;
- 
-     // grand total
-     const grandTotal = document.getElementById('Grand-total');
-     const grandValue = grandTotal.innerText;
-     grandTotal.innerText = sum;
-      
-     
-}
-
-// b2
-function handleSitB2(){
-    const a1 = document.getElementById('B2');
-    a1.classList.add('bg-[#1DD100]');
-    a1.classList.add('text-white')
-    const text = a1.innerText;
-    const mainText = text;
-
-    // create element
-    const divName = document.getElementById('div-name')
-     const p = document.createElement('p')
-     p.classList.add('mr-10')
-     divName.appendChild(p)
-     p.innerText = mainText + " " + 'Economy' + ' ' + 550;
-    //  part
-     // remove
-
-     let totalSit = document.getElementById('total-sit');
-     let total = totalSit.innerText;
-     let mainTotal = parseInt(total);
-     let he = mainTotal - 1;
-     totalSit.innerText = he;
- 
-     // add
-     let add = document.getElementById('add-number');
-     let addText = add.innerText;
-     let addNumber = parseInt(addText);
-     let added = addNumber + 1;
-     add.innerText = added;
-     if(add.innerText === '5'){
-         alert('you can purchases only 4 ticket')
-         location.reload();
-     }
-
-         // dubbole click
-    let a = 1;
-    a1.addEventListener('click',()=>{
-        a++;
-        if(a === 2){
-            alert("You cannot click a button twice")
-            location.reload();
-        }
-    })
- 
-     // added price
-     let pr = 550;
-     let price = document.getElementById('total-price');
-     let priceValue = price.innerText;
-     sum = parseFloat(price.innerText) + pr;
-     price.innerText = sum;
- 
-     // grand total
-     const grandTotal = document.getElementById('Grand-total');
-     const grandValue = grandTotal.innerText;
-     grandTotal.innerText = sum;
-      
-     
-}
-
-// b3
-function handleSitB3(){
-    const a1 = document.getElementById('B3');
-    a1.classList.add('bg-[#1DD100]');
-    a1.classList.add('text-white')
-    const text = a1.innerText;
-    const mainText = text;
-
-    // create element
-    const divName = document.getElementById('div-name')
-     const p = document.createElement('p')
-     p.classList.add('mr-10')
-     divName.appendChild(p)
-     p.innerText = mainText + " " + 'Economy' + ' ' + 550;
-    //  part
-     // remove
-
-     let totalSit = document.getElementById('total-sit');
-     let total = totalSit.innerText;
-     let mainTotal = parseInt(total);
-     let he = mainTotal - 1;
-     totalSit.innerText = he;
- 
-     // add
-     let add = document.getElementById('add-number');
-     let addText = add.innerText;
-     let addNumber = parseInt(addText);
-     let added = addNumber + 1;
-     add.innerText = added;
-     if(add.innerText === '5'){
-         alert('you can purchases only 4 ticket')
-         location.reload();
-     }
-
-         // dubbole click
-    let a = 1;
-    a1.addEventListener('click',()=>{
-        a++;
-        if(a === 2){
-            alert("You cannot click a button twice")
-            location.reload();
-        }
-    })
- 
-     // added price
-     let pr = 550;
-     let price = document.getElementById('total-price');
-     let priceValue = price.innerText;
-     sum = parseFloat(price.innerText) + pr;
-     price.innerText = sum;
- 
-     // grand total
-     const grandTotal = document.getElementById('Grand-total');
-     const grandValue = grandTotal.innerText;
-     grandTotal.innerText = sum;
-      
-     
-}
-
-// b4
-function handleSitB4(){
-    const a1 = document.getElementById('B4');
-    a1.classList.add('bg-[#1DD100]');
-    a1.classList.add('text-white')
-    const text = a1.innerText;
-    const mainText = text;
-
-    // create element
-    const divName = document.getElementById('div-name')
-     const p = document.createElement('p')
-     p.classList.add('mr-10')
-     divName.appendChild(p)
-     p.innerText = mainText + " " + 'Economy' + ' ' + 550;
-    //  part
-     // remove
-
-     let totalSit = document.getElementById('total-sit');
-     let total = totalSit.innerText;
-     let mainTotal = parseInt(total);
-     let he = mainTotal - 1;
-     totalSit.innerText = he;
- 
-     // add
-     let add = document.getElementById('add-number');
-     let addText = add.innerText;
-     let addNumber = parseInt(addText);
-     let added = addNumber + 1;
-     add.innerText = added;
-     if(add.innerText === '5'){
-         alert('you can purchases only 4 ticket')
-         location.reload();
-     }
-
-         // dubbole click
-    let a = 1;
-    a1.addEventListener('click',()=>{
-        a++;
-        if(a === 2){
-            alert("You cannot click a button twice")
-            location.reload();
-        }
-    })
- 
-     // added price
-     let pr = 550;
-     let price = document.getElementById('total-price');
-     let priceValue = price.innerText;
-     sum = parseFloat(price.innerText) + pr;
-     price.innerText = sum;
- 
-     // grand total
-     const grandTotal = document.getElementById('Grand-total');
-     const grandValue = grandTotal.innerText;
-     grandTotal.innerText = sum;
-      
-     
-}
-
-// APPLY BUTTON
-function applyBtn(){
-    const input = document.getElementById('cupon-input');
-    const inputDiv = document.getElementById('cupon-div');
-    const total = document.getElementById('total-price');
-    const grand = document.getElementById('Grand-total');
-    const grandPrice = grand.innerText;
-    if(input.value === 'NEW15'){
-        inputDiv.classList.add('hidden')
-        grand.innerText = total.innerText - (total.innerText * 0.15);
-
-    }
-    else if(input.value === 'Couple 20'){
-        inputDiv.classList.add('hidden')
-        grand.innerText = total.innerText - (total.innerText * 0.20);
-    }
-}
-// buy tickets
-
+                                    // start
 function buyTickets(){
-    const targetSection = document.getElementById('green-line');
-    targetSection.scrollIntoView({behavior:"smooth"});
+        const targetSection = document.getElementById('green-line');
+        targetSection.scrollIntoView({behavior:"smooth"});
 }
 
-function ContinueBtn(){
-    location.reload();
-}
+    const allSit = document.getElementsByClassName('kbd');
+ 
+    for(let sit of allSit){
+  
+        sit.addEventListener("click", function(event){
+ 
+             // add number
+             const totalSit = document.getElementById('add-number').innerText;
+           
+             if(totalSit == 4){
+                 alert("You can buy only four tickets.")
+                 return;
+             }
+               
+
+            sit.classList.add('bg-[#1DD100]');
+            sit.classList.add('text-white');
+
+            const name = event.target.innerText;
+
+            const divName = document.getElementById('div-name');
+            const p1 = document.createElement('p');
+            p1.innerText = name;
+            const p2 = document.createElement('p');
+            p2.innerText = 'Economy';
+            const p3 = document.createElement('p');
+            p3.innerText = 550;
+            divName.appendChild(p1);
+            divName.appendChild(p2);
+            divName.appendChild(p3);
+
+            // remove sit numbers
+            const mainSit = document.getElementById('total-sit');
+            const mainSitValue = mainSit.innerText;
+            const newSit = mainSitValue - 1;
+            mainSit.innerText = newSit;
+
+              
+            // add sit numbers
+            const addNumber = document.getElementById('add-number');
+            const addNumberValue = addNumber.innerText;
+            const newNumber = parseInt(addNumberValue) + 1;
+            addNumber.innerText = newNumber;
+            
+            // add total price
+            const totalPrice = document.getElementById('total-price');
+            const totalPriceValue = totalPrice.innerText;
+            const newPrice = parseInt(totalPriceValue) + 550;
+            totalPrice.innerText = newPrice;
+            // add grand total
+            const grandTotal = document.getElementById('Grand-total');
+            const grandTotalValue = grandTotal.innerText;
+            grandTotal.innerText = totalPrice.innerText;
+               
+        })
+                                                          //  ekta itcket ekbar e kinte parba
+            
+let a = 0;
+sit.addEventListener('click',()=>{
+    a++;
+    if(a + 1 > 2){
+        alert("You cannot click a button twice")
+     location.reload()
+    }
+})
+    }
+
+
+    function applyBtn(){
+        const grandTotal = document.getElementById('Grand-total');
+        const grandTotalValue = grandTotal.innerText
+        const input = document.getElementById('cupon-input');
+        if(input.value === 'NEW15'){
+        const grandTotalDiscount = grandTotalValue - (grandTotalValue * 0.15);
+        grandTotal.innerText = grandTotalDiscount;
+        }
+        else if(input.value === 'Couple 20'){
+            const grandTotalDiscount2 = grandTotalValue - (grandTotalValue * 0.20);
+            grandTotal.innerText = grandTotalDiscount2;
+            }
+   
+    }
+
+// remove disabled button
+document.getElementById('cupon-input').addEventListener('keyup', function(){
+    const input = document.getElementById('cupon-input');
+    const grandTotal = document.getElementById('Grand-total')
+    const inputValue = input.value;
+    const applyBtn = document.getElementById('apply-btn')
+    if((input.value === 'Couple 20' || input.value === 'NEW15') && grandTotal.innerText > 0 ){
+        applyBtn.disabled = false;
+     }
+})
+
+document.getElementById('ph-num').addEventListener('keyup', function(){
+    const next = document.getElementById('next-btn');
+    const phone = document.getElementById('ph-num');
+    const grandTotal = document.getElementById('Grand-total')
+    const phoneValue = phone.value;
+    if(phone.value.length === 11 && grandTotal.innerText > 0){
+        next.disabled = false;
+    }
+})
+
