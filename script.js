@@ -1,25 +1,3 @@
-// let sum =0;
-// function handleSit(){
-//     const a1 = document.getElementById('A1');
-//     a1.classList.add('bg-[#1DD100]');
-//     a1.classList.add('text-white')
-//     const text = a1.innerText;
-//     const mainText = text;
-
-
-//     // dubbole click
-//     let a = 1;
-//     a1.addEventListener('click',()=>{
-//         a++;
-//         if(a === 2){
-//             alert("You cannot click a button twice")
-//             location.reload();
-//         }
-//     })
-
-//    
-
-                                    // start
 function buyTickets(){
         const targetSection = document.getElementById('green-line');
         targetSection.scrollIntoView({behavior:"smooth"});
@@ -129,3 +107,6 @@ document.getElementById('ph-num').addEventListener('keyup', function(){
     }
 })
 
+function ContinueBtn(){
+    location.reload()
+}
